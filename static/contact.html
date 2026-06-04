@@ -1,68 +1,60 @@
-<Doctype html>
-<html>
-    <head>
-        <title>Contact</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · Learn DevOps</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="/home">
+                <span class="logo">DO</span>
+                Learn DevOps
+            </a>
+            <ul class="nav-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+    <main>
+        <section class="section">
+            <h1>Contact <span class="accent">Us</span></h1>
+            <p>
+                Have a doubt while learning? Want to connect with a community of fellow
+                learners? Reach out through any of the channels below.
+            </p>
+        </section>
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+        <section class="contact-grid">
+            <div class="card">
+                <span class="tag">Community</span>
+                <h3>Members-only Slack</h3>
+                <p>Join our exclusive Slack channel for members and get your doubts answered.</p>
+                <a class="card-link" href="https://www.youtube.com/abhishekVeeramalla/join" target="_blank" rel="noopener">Become a member</a>
+            </div>
+            <div class="card">
+                <span class="tag">Learn</span>
+                <h3>YouTube Channel</h3>
+                <p>Subscribe for free Zero-to-Hero DevOps and Cloud tutorials.</p>
+                <a class="card-link" href="https://www.youtube.com/@abhishek.veeramalla" target="_blank" rel="noopener">Visit channel</a>
+            </div>
+            <div class="card">
+                <span class="tag">Browse</span>
+                <h3>All Courses</h3>
+                <p>Explore the full catalog of playlists and pick a track to start.</p>
+                <a class="card-link" href="/courses">View courses</a>
+            </div>
+        </section>
+    </main>
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+    <footer class="site-footer">
+        <p>&copy; Abhishek Veeramalla · Built with Go &amp; <code>net/http</code></p>
+    </footer>
+</body>
+</html>

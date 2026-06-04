@@ -32,6 +32,19 @@ func main() {
 	http.HandleFunc("/about", aboutPage)
 	http.HandleFunc("/contact", contactPage)
 
+	// Serve shared assets (CSS, images) from the static/assets folder
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("static/assets"))))
+
+	// Redirect the root path to the home page
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		if r.URL.Path != "/" {
+			http.NotFound(w, r)
+			return
+		}
+		http.Redirect(w, r, "/home", http.StatusFound)
+	})
+
+	log.Println("Server starting on http://localhost:8080")
 	err := http.ListenAndServe("0.0.0.0:8080", nil)
 	if err != nil {
 		log.Fatal(err)

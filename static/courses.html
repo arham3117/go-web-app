@@ -1,92 +1,103 @@
-<DocType html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses · Learn DevOps</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="/home">
+                <span class="logo">DO</span>
+                Learn DevOps
+            </a>
+            <ul class="nav-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/courses" class="active">Courses</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<html>
-    <head>
-        <title>Learn DevOps from Basics</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+    <main>
+        <section class="section">
+            <h1>Courses &amp; <span class="accent">Tutorials</span></h1>
+            <p>
+                DevOps combines software development (Dev) and IT operations (Ops) to
+                shorten the development life cycle and deliver high-quality software
+                continuously. Pick a track below and start building real skills.
+            </p>
+        </section>
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+        <section class="course-group">
+            <h2>Main Tutorials</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>DevOps Zero to Hero</h3>
+                    <p>The complete DevOps roadmap with practical, project-based lessons.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+                <div class="card">
+                    <h3>AWS Zero to Hero</h3>
+                    <p>Go from the basics to advanced services on Amazon Web Services.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+                <div class="card">
+                    <h3>Azure Zero to Hero</h3>
+                    <p>Master Microsoft Azure for cloud infrastructure and deployments.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+                <div class="card">
+                    <h3>Terraform Zero to Hero</h3>
+                    <p>Learn infrastructure as code with HashiCorp Terraform.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+                <div class="card">
+                    <h3>Python Zero to Hero</h3>
+                    <p>Programming foundations every DevOps engineer should know.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+            </div>
+        </section>
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+        <section class="course-group">
+            <h2>Additional Tutorials</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Networking Fundamentals</h3>
+                    <p>The networking concepts that underpin everything in the cloud.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+                <div class="card">
+                    <h3>Ansible Zero to Hero</h3>
+                    <p>Automate configuration management at scale with Ansible.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+                <div class="card">
+                    <h3>GitOps Zero to Hero</h3>
+                    <p>Modern continuous delivery driven by Git as the single source of truth.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+            </div>
+        </section>
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
+        <section class="course-group">
+            <h2>Troubleshooting Tutorials</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Troubleshooting Kubernetes</h3>
+                    <p>Diagnose and fix real-world problems in Kubernetes clusters.</p>
+                    <a class="card-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX" target="_blank" rel="noopener">Watch playlist</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1>Learn DevOps from Basics</h1>
-                <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)</p>
-                <p>It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology</p>    
-
-                <h2>Main Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">DevOps Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">AWS Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Azure Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Terraform Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Python Zero to Hero</a></p>
-
-                <h2>Additional Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Networking Fundamentals</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Ansible Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">GitOps Zero to Hero</a></p>
-
-                <h2>Troubleshooting Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Troubleshooting Kubernetes</a></p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
-        </footer>
-    </body>
+    <footer class="site-footer">
+        <p>&copy; Abhishek Veeramalla · Built with Go &amp; <code>net/http</code></p>
+    </footer>
+</body>
 </html>

@@ -2,90 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>    
+    <title>Learn DevOps from Basics</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="/home">
+                <span class="logo">DO</span>
+                Learn DevOps
+            </a>
+            <ul class="nav-links">
+                <li><a href="/home" class="active">Home</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
+        <section class="hero">
+            <span class="eyebrow">Free • Practical • Beginner friendly</span>
+            <h1>Learn <span class="accent">DevOps</span> from the basics</h1>
+            <p class="lead">
+                Zero-to-Hero courses on every popular DevOps tool and Cloud platform
+                (AWS &amp; Azure). Real projects, clear explanations, and the best
+                resources to take you from beginner to job-ready — completely free.
             </p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="/courses">Browse courses</a>
+                <a class="btn btn-ghost" href="/about">About the author</a>
+            </div>
         </section>
 
-        <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
-        </section>
-
-        <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
+        <section class="section">
+            <h2>What you'll find here</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">Foundations</span>
+                    <h3>DevOps Fundamentals</h3>
+                    <p>Understand the culture, practices, and tools that bridge development and operations.</p>
+                    <a class="card-link" href="/courses">Start learning</a>
+                </div>
+                <div class="card">
+                    <span class="tag">Cloud</span>
+                    <h3>AWS &amp; Azure</h3>
+                    <p>Hands-on Zero-to-Hero playlists for the two most in-demand cloud platforms.</p>
+                    <a class="card-link" href="/courses">Explore cloud</a>
+                </div>
+                <div class="card">
+                    <span class="tag">Automation</span>
+                    <h3>Terraform, Ansible &amp; GitOps</h3>
+                    <p>Master infrastructure as code and modern continuous delivery workflows.</p>
+                    <a class="card-link" href="/courses">See tutorials</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
+    <footer class="site-footer">
+        <p>&copy; Abhishek Veeramalla · Built with Go &amp; <code>net/http</code></p>
     </footer>
 </body>
 </html>

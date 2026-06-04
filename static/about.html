@@ -1,90 +1,67 @@
-<Docktype html>
-<html>
-    <head>
-        <title>About</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Learn DevOps</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="/home">
+                <span class="logo">DO</span>
+                Learn DevOps
+            </a>
+            <ul class="nav-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+    <main>
+        <section class="section">
+            <h1>About the <span class="accent">Author</span></h1>
+        </section>
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+        <section class="about-card">
+            <p>
+                Hi everyone, my name is <strong>Abhishek</strong> and welcome to my channel :)
+                I am an open-source enthusiast and a firm believer in sharing knowledge.
+            </p>
+            <p>
+                I have my footprints in popular open-source projects like Argo CD, Argo CD
+                Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller,
+                and the NGINX Ingress Controller, among others.
+            </p>
+            <p>
+                Apart from working at Red Hat as a GitOps product lead, I also hold the
+                following positions in open-source communities:
+            </p>
+            <ul>
+                <li>Maintainer of Argo CD Operator</li>
+                <li>Creator of Argo Rollouts Manager</li>
+                <li>Maintainer of Red Hat Developer (GitOps Operator)</li>
+                <li>Member of the Argo Project</li>
+                <li>Member of Argo SIG Security</li>
+            </ul>
+            <p>
+                If you want to learn complete DevOps for free with practical projects,
+                check out the playlist below — and please subscribe to keep learning and
+                growing together. Thanks :)
+            </p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa" target="_blank" rel="noopener">View playlists</a>
+                <a class="btn btn-ghost" href="/contact">Get in touch</a>
+            </div>
+        </section>
+    </main>
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1>About the Author</h1>
-                <p>Hi Everyone, My name is Abhishek and welcome to my channel :)</p>
-
-                    <p>    I am an opensource enthusiast and a great believer in sharing knowledge. </p>
-                        <p>  I have my footprints in popular opensource projects like Argo CD, Argo CD Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller, Nginx Ingress Controller by Nginx and others. </p>
-                    
-                            <p> Apart from working with Red Hat as a GitOps product lead, I also hold below positions in OpenSource communities</p>
-                                <p>  - Maintainer of Argo CD Operator</p>
-                                    <p> - Creator of Argo Rollouts Manager</p>
-                                        <p> - Maintainer of RedHat Developer (GitOps operator)</p>
-                                            <p> - Member of Argo Project</p>
-                                                <p> - Member of Argo SIG Security</p>
-                    
-                                                    <p> If you want to learn complete devops for free with practical projects, checkout the playlist</p>
-                                                        <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa"> Playlists</a></p>
-                    
-                                                            <p> Please subscribe to the channel to keep learning and growing together. Thanks :)</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
-        </footer>
-    </body>
+    <footer class="site-footer">
+        <p>&copy; Abhishek Veeramalla · Built with Go &amp; <code>net/http</code></p>
+    </footer>
+</body>
 </html>
